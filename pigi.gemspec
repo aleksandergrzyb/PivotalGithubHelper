@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Pigi::VERSION
   spec.authors       = ["Aleksander Grzyb"]
   spec.email         = ["aleksander.grzyb@gmail.com"]
-  spec.summary       = "Command line tool that automatically adds Pivotal Tracker story ID to your commit message."
+  spec.summary       = "Command line tool that automatically adds Pivotal Tracker story ID into your commit message."
   spec.description   = "The purpose of this tool is to speed up development process of developers using integration between Github and Pivotal Tracker (http://pivotallabs.com/level-up-your-development-workflow-with-github-pivotal-tracker/)."
   spec.homepage      = ""
   spec.license       = "MIT"

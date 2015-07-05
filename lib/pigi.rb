@@ -31,7 +31,7 @@ module Pigi
       end
     end
 
-    desc "m <message>", "Execute a 'git commit -m' command with argument in format '<message> [#<id>]'."
+    desc "m <message>", "Execute a command in format 'git commit -m \"<message> [#<id>]\"'."
     def m(message)
       pivotalTrackerID = IDFileManager.readID()
       if !/\A\d{8}\z/.match(pivotalTrackerID)
