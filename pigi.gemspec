@@ -8,13 +8,13 @@ Gem::Specification.new do |spec|
   spec.version       = Pigi::VERSION
   spec.authors       = ["Aleksander Grzyb"]
   spec.email         = ["aleksander.grzyb@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "Command line tool that automatically adds Pivotal Tracker story ID to your commit message."
+  spec.description   = "The purpose of this tool is to speed up development process of developers using integration between Github and Pivotal Tracker (http://pivotallabs.com/level-up-your-development-workflow-with-github-pivotal-tracker/)."
   spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables   = ["pigi"]
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
