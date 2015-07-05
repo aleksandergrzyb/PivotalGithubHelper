@@ -22,7 +22,7 @@ The result of this command is identical as this command:
 
 	$ git commit -m "add awesome feature [#12345678]"
 	
-If you want to work on another story just simply set pigi to your current story ID that you are working on.
+If you want to work on another story just simply set pigi to your current story ID that you are working on:
 
 	$ pigi s 87654321
 	
