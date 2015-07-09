@@ -1,6 +1,6 @@
 # Pigi
 
-Pigi is a command line tool that automatically adds your Pivotal Tracker story ID into your commit message. The purpose of this tool is to speed up development process of developers using [integration](http://pivotallabs.com/level-up-your-development-workflow-with-github-pivotal-tracker/) between Github and Pivotal Tracker.
+Pigi is a command line tool that automatically adds your Pivotal Tracker story ID into your commit message. The purpose of this tool is to speed up development process of developers using [Github’s service hook for Pivotal Tracker](http://www.pivotaltracker.com/community/tracker-blog/guide-githubs-service-hook-tracker).
 
 ## Installation
 
@@ -18,7 +18,7 @@ Now every time you want to commit changes in your git repository you do it by ty
 
 	$ pigi m "add awesome feature"
 	
-The result of this command is identical as this command:
+The result of this command is identical to this command:
 
 	$ git commit -m "add awesome feature [#12345678]"
 	
