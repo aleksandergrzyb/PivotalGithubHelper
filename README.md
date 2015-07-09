@@ -25,12 +25,3 @@ The result of this command is identical to this command:
 If you want to work on another story just simply set pigi to your current story ID that you are working on:
 
 	$ pigi s 87654321
-	
-
-## Contributing
-
-1. Fork it ( https://github.com/aleksandergrzyb/PivotalGithubHelper/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
