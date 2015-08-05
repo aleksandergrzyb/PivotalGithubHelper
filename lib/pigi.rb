@@ -14,7 +14,7 @@ module Pigi
       if File::exists?(@@filePath)
         arr = IO.readlines(@@filePath)
         arr[0]
-      else 
+      else
         "ID wasn't set. Set your ID once again using s command."
       end
     end
@@ -23,9 +23,9 @@ module Pigi
   class SetID < Thor
     desc "s <id>", "Set <id> of your Pivotal Tracker story."
     def s(id)
-      if !/\A\d{8}\z/.match(id)
+      if !/\A\d*\z/.match(id)
         puts "Invalid story ID format. Set your ID once again using s command."
-      else 
+      else
         puts "Set project ID: #{id}"
         IDFileManager.saveIDToFile(id)
       end
@@ -34,7 +34,7 @@ module Pigi
     desc "m <message>", "Execute a command in format 'git commit -m \"<message> [#<id>]\"'."
     def m(message)
       pivotalTrackerID = IDFileManager.readID()
-      if !/\A\d{8}\z/.match(pivotalTrackerID)
+      if !/\A\d*\z/.match(pivotalTrackerID)
         puts "Invalid story ID format. Set your ID once again using s command."
       else
         command = "git commit -m \"" + message + " [##{pivotalTrackerID}]\""
